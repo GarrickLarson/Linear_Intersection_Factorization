@@ -7,7 +7,7 @@ import time
 # doesn't seem to work in Python 2. Works in my version of Python 3
 
 f1 = 999999999959
-f2 = 999875882263
+f2 = 999938640203
 cp = f1 * f2
 
 print(' Factor 1: ' + str(f1))
@@ -21,10 +21,14 @@ print('(((Linear Intersection Method)))')
 print()
 start_time = time.time()
 count = 0
-d = math.floor(math.sqrt(cp)*2)+1
+d = math.floor(math.sqrt(cp)*2)
+try:
+    math.sqrt(d**2 - 4*cp)
+except:
+    d += 1
 
 while True:
-    # count += 1  # comment out count to increase speed
+    count += 1  # comment out count to increase speed
     interceptor = math.floor(.5 * (d - math.sqrt(d**2 - 4*cp)))
     if cp % interceptor == 0:
         break
@@ -47,7 +51,7 @@ b = math.floor(math.sqrt(cp))
 
 while cp % b != 0:
     b -= 1
-    # count += 1  # comment out count to increase speed
+    count += 1  # comment out count to increase speed
 t1 = time.time() - start_time
 print(b)
 print("Iterations: " + str(count))
