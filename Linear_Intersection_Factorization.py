@@ -4,6 +4,8 @@ import time
 # Garrick Larson
 # 2018/2/1 0121 hrs
 # prime factors were downloaded from http://www.primos.mat.br/
+# doesn't seem to work in Python 2. Works in my version of Python 3
+
 f1 = 999999999959
 f2 = 999875882263
 cp = f1 * f2
