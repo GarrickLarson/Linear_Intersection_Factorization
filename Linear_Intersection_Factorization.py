@@ -6,8 +6,8 @@ import time
 # prime factors were downloaded from http://www.primos.mat.br/
 f1 = 999999999959
 f2 = 999875882263
-
 cp = f1 * f2
+
 print(' Factor 1: ' + str(f1))
 print(' Factor 2: ' + str(f2))
 print('Composite: ' + str(cp))
