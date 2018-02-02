@@ -48,9 +48,6 @@ print()
 print('Composite Semiprime: ')
 print(cp)
 print()
-# print(' Factor 1: ' + str(f1))
-# print(' Factor 2: ' + str(f2))
-# print('Composite: ' + str(cp))
 
 
 # -x intercept method
